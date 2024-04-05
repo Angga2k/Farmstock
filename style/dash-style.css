@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+  width: 15%;
+  padding: 20px;
+  backdrop-filter: blur(30px) saturate(180%);
+  background-color: #f7f7f7;
+  border-color: gray;
+  box-shadow: 2px 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;    
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-title{
+  color: rgb(118, 118, 119);
+  margin-top: 10px;
+}
+
+.content{
+  display: grid;
+  gap: 5px;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: rgb(15 23 42);
+}
+.nav-items{
+  padding-left: 12px;
+}
+.nav-items ul{
+  display: grid;
+  gap: 5px; 
+}
+.nav-items li{
+  transition: all 0.1s ease-in-out;
+}
+.grid{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.nav-items li:hover{
+  transform: translateY(-2px);
+  font-weight: bold;  
+}
+.say-welcome{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  align-items: start;
+  box-shadow: 1px 1px 1px 1px rgba(71, 53, 53, 0.2);
+}
+.gradient-text{
+  background-color: #662D8C;
+  background: linear-gradient(to right, #662D8C , #ED1E79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dashboard{
+  padding: 20px;
+  height: 100vh;
+  padding-top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: calc(100vh - 40px);
+  background-color: hsl(0, 0%, 100%);
+}
+.dash-content{
+  margin-top: 10px;
+  padding: 10px;
+}
+.card{
+  padding: 10px 40px 10px 20px;
+  background: rgba(165, 0, 255, 0.42);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(165, 0, 255, 1);
+  transition: all 0.2s ease-in-out;
+}
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(165, 0, 255, 1.2);
+  border-width: 2px;
+}
+input{
+  padding: 10px;
+  font-size: 16px;
+}
+.submit-button{
+  padding: 10px 30px; 
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.submit-button:hover{
+  background-color: darkgreen;
+  cursor: pointer;
+}
+.reset-button{
+  padding: 10px 30px; 
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.reset-button:hover{
+  background-color: darkred;
+  cursor: pointer;
+}
+
+table{
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+/* style tombol edit */
+.edit-button{
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.edit-button:hover{
+  background-color: gold;
+}
+
+/* style tombol delete */
+.delete-button{
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.delete-button:hover{
+  background-color: darkred;
+}
