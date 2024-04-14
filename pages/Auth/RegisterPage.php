@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <link rel="stylesheet" href="../../style/log-reg-style.css">
+    <link rel="stylesheet" href="../style/log-reg-style.css">
 </head>
 <body>
     <div class="container">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="image-reg">
-                <img src="../../Assets/Regis.jpg" alt="" class="regis-img">
+                <img src="../assets/Regis.jpg" alt="" class="regis-img">
             </div>
         </div>
     </div>

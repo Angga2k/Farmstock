@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../../style/log-reg-style.css">
+    <link rel="stylesheet" href="../style/log-reg-style.css">
 </head>
 <body>
     <div class="container">
         <div class="login">
             <div class="flex-row">
                 <div class="image-log">
-                    <img src="../../Assets/Regis.jpg" alt="" class="login-img">
+                    <img src="../assets/Regis.jpg" alt="" class="login-img">
                 </div>
                 <div class="flex-col">
                     <div class="header">

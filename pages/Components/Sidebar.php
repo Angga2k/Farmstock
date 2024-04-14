@@ -3,14 +3,14 @@
                 <div class="flex-col">
                     <div class="content">
                         <div class="flex-row" style="gap: 5px;">
-                            <img src="../../assets/ungser.webp" alt="" class="" style="width: 40px; height: 40px;">
+                            <img src="../assets/ungser.webp" alt="" class="" style="width: 40px; height: 40px;">
                             <div>
                                 <div class="flex-col">
                                     <div class="poppins-regular">Hi, Feitan</div>
                                     <div class="flex-row">
                                         <a href="../Auth/LoginPage.php" class="flex-row" style="gap: 5px;">
                                             <div style="font-size: 13px; color: red;">Logout</div>
-                                            <img src="../../assets/logout.png" alt="" style="width: 18px; height: 18px;">
+                                            <img src="../assets/logout.png" alt="" style="width: 18px; height: 18px;">
                                         </a>    
                                     </div>
                                 </div>
