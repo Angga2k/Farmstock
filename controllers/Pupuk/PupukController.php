@@ -21,7 +21,7 @@ class PupukController{
   public static function create(){
     global $url;
     $data = PupukModel::create($_POST["nama_pupuk"],$_POST["stok"],$_POST["deskripsi"]);
-    header("Location:".$url."/pages/Pupuk/list-pupuk-page.php");
+    header("Location:".$url."pages/Pupuk/list-pupuk-page.php");
   }
 
   public static function detail(){
@@ -38,6 +38,6 @@ class PupukController{
   public static function delete(){
     global $url;
     $data = PupukModel::delete($_GET["id"]);
-    header("Location:".$url."/pages/Pupuk/list-pupuk-page.php");
+    header("Location:".$url."pages/Pupuk/list-pupuk-page.php");
   }
 }
