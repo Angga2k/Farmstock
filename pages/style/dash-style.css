@@ -47,6 +47,10 @@ body {
   font-style: normal;
 }
 
+.hidden{
+  display:none;
+}
+
 .work-sans {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;

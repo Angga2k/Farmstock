@@ -1,6 +1,6 @@
-<?php
-    require_once("../../controller/Pupuk/PupukController.php");
-    $controller = new PupukController();
+<?php 
+    require '../../controllers/Pupuk/PupukController.php';
+    $data = PupukController::index();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@
                         <div class="flex-col">
                             <div class="poppins-semibold" style="font-size: 18px; margin-bottom: 10px">TAMBAH PUPUK</div>
                             <div class="flex-col">
-                                <form action="../../controller/Pupuk/insert.php" method="post">
+                                <form action="../../controllers/Pupuk/PupukController.php?action=create" method="POST">
                                     <div class="flex-col" style="gap: 7px">
                                         <label for="nama_pupuk" class="poppins-regular">Nama</label>
                                         <input type="text" name="nama_pupuk" id="nama_pupuk">
@@ -51,20 +51,22 @@
                                     <th>Action</th>
                                 </tr>
                                 <?php
-                                foreach ($controller->select() as $key => $row) : ?>
+                                for ($i=0; $i < count($data); $i++) { ?>
                                 <tr>
-                                    <td><?= (int)$key + 1 ?></td>
-                                    <td><?= $row['nama_pupuk'] ?></td>
-                                    <td><?= $row['stok'] ?></td>
-                                    <td><?= $row['deskripsi'] ?></td>
+                                    <td><?= (int)$i + 1 ?></td>
+                                    <td><?= $data[$i]['nama_pupuk'] ?></td>
+                                    <td><?= $data[$i]['stok'] ?></td>
+                                    <td><?= $data[$i]['deskripsi'] ?></td>
                                     <td>
-                                        <a href="">
+                                        <a href="<?= "/farmstock/pages/Pupuk/edit-pupuk-page.php?id=". $data[$i]['id']; ?>">
                                             <button class="edit-button">Edit</button>
                                         </a>
-                                        <button class="delete-button">Delete</button>
+                                        <a href="../../controllers/Pupuk/PupukController.php?action=delete&id=<?= $data[$i]['id']; ?>" onclick="return confirm('Are you sure you want to delete this item?');">
+                                            <button class="delete-button">Delete</button>
+                                        </a>
                                     </td>
                                 </tr>
-                                <?php endforeach; ?>
+                                <?php } ?>
                             </table>
                         </div>
                     </div>
