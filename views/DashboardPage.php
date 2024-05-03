@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmstock | Dashboard</title>
-    <link rel="stylesheet" href="../style/dash-style.css">
+    <link rel="stylesheet" href="views/style/dash-style.css">
 </head>
 <body>
     <div class="poppins-regular">
         <div class="flex-row container">
-            <?php include('./../Components/Sidebar.php');?>
+            <?php include 'views/Components/Sidebar.php'?>
             <div class="dashboard">
                 <div class="say-welcome flex-row">
                     <div class="flex-col">
