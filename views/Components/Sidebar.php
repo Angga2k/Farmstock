@@ -8,7 +8,7 @@
                                 <div class="flex-col">
                                     <div class="poppins-regular">Hi, Feitan</div>
                                     <div class="flex-row">
-                                        <a href="../Auth/LoginPage.php" class="flex-row" style="gap: 5px;">
+                                        <a href="logout" class="flex-row" style="gap: 5px;">
                                             <div style="font-size: 13px; color: red;">Logout</div>
                                             <img src="views/assets/logout.png" alt="" style="width: 18px; height: 18px;">
                                         </a>    
@@ -21,7 +21,7 @@
                         </div>
                         <div class="nav-items poppins-medium" style="font-size: 13px;">
                             <ul>
-                                <li><a href="./../Dashboard/DashboardPage.php">Dashboard</a></li>
+                                <li><a href="/Farmstock/Dashboard"></a></li>
                             </ul>
                         </div>
                         <div class="nav-title">
@@ -29,7 +29,7 @@
                         </div>
                         <div class="nav-items poppins-medium" style="font-size: 13px;">
                             <ul>
-                                <li><a href="/Pupuk">Pendataan Pupuk</a></li>
+                                <li><a href="/Farmstock/pupuk">Pendataan Pupuk</a></li>
                                 <li><a href="">Pendataan Hasil Pertanian</a></li>
                             </ul>
                         </div>
